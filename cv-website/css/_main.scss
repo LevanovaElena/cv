@@ -1,0 +1,35 @@
+/*/////////////////////////SECTION ABOUT ME///////////////////////////////////*/
+.aboutme {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 40px;
+}
+.aboutme .white-block {
+   width: 585px;
+   height: 450px;
+}
+
+/*//////////////////////////SECTION SKILLS AND EDUCATION///////////////////////////////////////////////////*/
+.knowledge {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 40px;
+}
+
+.knowledge .block-shadowed {
+   height: 80%;
+}
+.bottomIcon {
+   position: absolute;
+   bottom: 10px;
+   right: 15px;
+}
+
+.another-information {
+   margin-top: 40px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 100%;
+   padding: 25px 0 25px 0;
+}

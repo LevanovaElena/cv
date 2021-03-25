@@ -1,0 +1,39 @@
+@import "./header";
+@import "./menu";
+@import "./block-shadowed";
+@import "./white-block";
+@import "./education";
+@import "./main";
+@import "./portfolio";
+@import "./footer";
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   margin-block-start: 0;
+   margin-block-end: 0;
+}
+
+.container {
+   position: relative;
+   margin: 0 auto;
+   width: 1024px;
+}
+
+a,
+a:hover {
+   text-decoration: none;
+}
+
+.icon {
+   width: 50px;
+   height: 50px;
+}
+
+h2 {
+   color: #333333;
+   font-family: "Open Sans";
+   font-size: 18px;
+   font-weight: bold;
+}

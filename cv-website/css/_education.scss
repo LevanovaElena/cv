@@ -1,0 +1,21 @@
+/*------ITEMS INTO EDUCATION------*/
+.education__item {
+   margin-top: 10px;
+   position: relative;
+}
+.circle {
+   position: absolute;
+   left: -35px;
+}
+.education__item .text {
+   max-width: 70%;
+}
+.years {
+   position: absolute;
+   right: -10px;
+   top: 40%;
+   color: #cccccc;
+   font-family: "Open Sans";
+   font-size: 36px;
+   font-weight: bold;
+}
