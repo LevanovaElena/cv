@@ -1,75 +1,81 @@
 let works = [
   {
     image: "wix.jpg",
-    caption: "Website on CMS Wix",
-    src: "#",
+    caption: "Website on CMS Wix. Real project on CMS WIX",
+    src: "https://ellevanova.wixsite.com/parspb",
     typeIcon: "CMS",
-    about: "",
+  },
+  {
+    image: "cv.jpg",
+    caption: "Site of my CV and portfolio: HTML5,SCSS,JS",
+    src: "https://levanovaelena.github.io/cv/cv-website/",
+    typeIcon: "htmlCssJs",
   },
   {
     image: "webdev.jpg",
-    caption: "Website on HTML, CSS",
+    caption: "Training project:  HTML5, CSS3, Pixel Perfect layout",
     src: "https://levanovaelena.github.io/cv/portfolio/webdev/index.html",
     typeIcon: "htmlCss",
-    about: "Training project:  HTML5, CSS3, Pixel Perfect layout",
   },
   {
     image: "calculator.jpg",
-    caption: "Website on HTML, CSS, JS",
+    caption: "Training project on HTML5, CSS3, JS6",
     src: "https://levanovaelena.github.io/cv/portfolio/calculator/",
     typeIcon: "htmlCssJs",
-    about: "Training project on HTML5, CSS3, JS6",
   },
   {
     image: "shelter.jpg",
-    caption: "Website on HTML, CSS, JS",
+    caption: "Training project on HTML5, CSS3, JS6, SCSS,Pixel Perfect layout",
     src:
       "https://levanovaelena.github.io/cv/portfolio/shelter/pages/main/main.html",
     typeIcon: "htmlCssJs",
-    about: "Training project on HTML5, CSS3, JS6, SCSS,Pixel Perfect layout",
   },
   {
     image: "keyboard.jpg",
-    caption: "Website on HTML, CSS, JS",
+    caption: "Training project on HTML5, CSS3, JS6, SCSS",
     src: "https://levanovaelena.github.io/cv/portfolio/virtual-keyboard/",
     typeIcon: "htmlCssJs",
-    about: "Training project on HTML5, CSS3, JS6, SCSS",
   },
   {
     image: "puzzle.jpg",
-    caption: "Website on HTML, CSS, JS",
+    caption: "Training project on HTML5, CSS3, JS6, SCSS",
     src: "https://levanovaelena.github.io/cv/portfolio/gem-puzzle/",
     typeIcon: "htmlCssJs",
-    about: "Training project on HTML5, CSS3, JS6, SCSS",
   },
   {
     image: "kids.jpg",
-    caption: "Website on HTML, CSS, JS",
+    caption:
+      "Training project on HTML5, CSS3, JS6, SCSS, Single-page application",
     src: "https://levanovaelena.github.io/cv/portfolio/english-for-kids/src/",
     typeIcon: "htmlCss",
   },
   {
     image: "momentum.jpg",
-    caption: "Website on HTML, CSS, JS",
+    caption: "Training project on HTML5, CSS3, JS6, SCSS",
     src: "https://levanovaelena.github.io/cv/portfolio/momentum/",
     typeIcon: "htmlCssJs",
-    about: "Training project on HTML5, CSS3, JS6, SCSS",
   },
   {
-    image: "9.jpg",
-    caption: "Website on CMS Wix",
-    src: "#",
+    image: "covid.jpg",
+    caption:
+      "Training project on HTML5, CSS3, JS6, SCSS, Webpack, WEB-API. Teamwork.Single-page application.",
+    src:
+      "https://levanovaelena.github.io/cv/portfolio/covid-dashboard/index.html",
     typeIcon: "htmlCssJs",
-    about: "Training project on HTML5, CSS3, JS6, SCSS",
   },
   {
-    image: "10.jpg",
-    caption: "Website on CMS Wix",
-    src: "#",
-    typeIcon: "htmlCss",
+    image: "alfabet.jpg",
+    caption:
+      "Training project on HTML5, CSS3, TypeScript(OOP,Canvas), single-page application, SCSS, Bootstrap, Webpack, WEB-API. Teamwork. Backend.",
+    src: "https://rsclone100.herokuapp.com/#carouselExampleControls",
+    typeIcon: "htmlCssJs",
   },
 ];
-let icons = { CMS: "CMS.png", htmlCss: "iconHtmlCss.png" };
+let icons = {
+  CMS: "CMS.png",
+  htmlCss: "iconHtmlCss.png",
+  htmlCssJs: "iconJs.png",
+};
 
 class Slide {
   constructor(array, portfolio) {
@@ -84,12 +90,15 @@ class Slide {
       let icon = icons[item.typeIcon];
       let portfolioItem = createElement("div", "portfolio__item");
       portfolioItem.classList.add("block-shadowed");
-      let portfolioImage = createElement("div", "portfolio__image");
+      let portfolioImage = createElement("a", "portfolio__image");
+      portfolioImage.setAttribute("href", item.src);
+      portfolioImage.setAttribute("target", "blank");
+
       let portfolioCard = createElement("div", "portfolio-card");
       portfolioCard.innerHTML =
         ` <img class='portfolio-card__icon' src='./img/icons/${icon}' alt='` +
         item.caption +
-        "'><a href='#' class='portfolio-card__a text-shadow'>" +
+        `'><a href='${item.src}' class='portfolio-card__a text-shadow'>` +
         item.caption +
         "</a>";
       portfolioImage.classList.add("none");
@@ -119,8 +128,9 @@ works.forEach((item) => {
     i += 1;
   } else {
     arrayOfSliders.push(new Slide(arrayForSlide, portfolio));
-    i = 1;
+    i = 0;
     arrayForSlide = [];
+    arrayForSlide.push(item);
   }
 });
 arrayOfSliders.push(new Slide(arrayForSlide, portfolio));
