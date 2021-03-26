@@ -1,0 +1,45 @@
+/*--------------title-------------------*/
+.title {
+   @include title;
+}
+.title_h2 {
+   @include title_h2;
+   color: $color_light_xl;
+}
+
+.title_small {
+   @include title_small;
+   color: $color-dark-l;
+}
+
+.title_h3 {
+   @include title_h3;
+   color: $color-dark-l;
+}
+
+.title_h4 {
+   @include title_h4;
+   color: $color-dark-l;
+}
+/*----------------------------------------*/
+.title_h5 {
+   @include title_h5;
+   color: $color-dark-l;
+}
+.text_description {
+   @include text_description;
+   color: $color-dark-m;
+}
+
+/*------mobile----------------*/
+@media (max-width: 32rem) {
+   .title_h2 {
+      @include title_h2_mobile;
+   }
+   .title_small {
+      @include title_small_mobile;
+   }
+   .title_h4 {
+      @include title_h5;
+   }
+}

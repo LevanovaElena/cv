@@ -1,0 +1,15 @@
+.wrapper {
+   max-width: 1200px;
+   margin: 0px auto;
+}
+
+@media (max-width: 76.8rem) {
+   .wrapper {
+      max-width: 70.8rem;
+   }
+}
+@media (max-width: 32rem) {
+   .wrapper {
+      max-width: 30rem;
+   }
+}

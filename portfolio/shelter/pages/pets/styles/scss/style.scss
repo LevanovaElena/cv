@@ -1,0 +1,19 @@
+@import "_mixins";
+@import "_variables";
+@import "_titles";
+@import "_wrapper";
+@import "_buttons";
+@import "_header";
+@import "_ourFriends";
+@import "_footer";
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+}
+html {
+   font-size: 10px;
+}
+main {
+   background-color: $color-light-l;
+}

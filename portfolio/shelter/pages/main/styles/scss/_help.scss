@@ -1,0 +1,38 @@
+.help {
+   @include padding-wrapper;
+   text-align: center;
+}
+
+.help-items {
+   display: flex;
+   flex-flow: row wrap;
+   align-content: space-between;
+   justify-content: center;
+
+   margin-top: 6rem;
+}
+.help__item {
+   padding-bottom: 5.5rem;
+   width: 24rem;
+}
+.help__item__icon img {
+   width: 6rem;
+   height: 6rem;
+}
+.help__item__icon {
+   margin-bottom: 3rem;
+}
+@media (max-width: 76.8rem) {
+   .help__item {
+      width: 20rem;
+   }
+}
+@media (max-width: 32rem) {
+   .help__item {
+      width: 13rem;
+      padding-bottom: 3rem;
+   }
+   .help-items {
+      justify-content: flex-start;
+   }
+}

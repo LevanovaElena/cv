@@ -1,0 +1,57 @@
+.button {
+   width: 20.7rem;
+   height: 5.2rem;
+
+   border-radius: 2.6rem;
+   border-width: 0px;
+   font-family: $fontBig;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 1.7rem;
+   line-height: 1.9rem;
+   letter-spacing: 0.1rem;
+   cursor: pointer;
+}
+.button:hover {
+   background-color: $color-primary-light;
+}
+
+.button_pink {
+   background-color: $color-primary;
+}
+
+.button_white {
+   background-color: white;
+   border-width: 0.2rem;
+   border-color: $color-primary-light;
+   border-style: solid;
+}
+
+/*-------------------cirlce buttons-------------------------------*/
+.button-circle-active {
+   width: 5.2rem;
+   height: 5.2rem;
+   border: 0.2rem solid $color-primary-light;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+}
+
+.button-circle-inactive {
+   width: 5.2rem;
+   height: 5.2rem;
+   border: 0.2rem solid $color-dark-s;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: white;
+   color: $color-dark-s;
+   cursor: default;
+}
+.button-circle-active:hover {
+   background-color: $color-primary-light;
+   cursor: pointer;
+}

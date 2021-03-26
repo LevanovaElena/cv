@@ -1,0 +1,79 @@
+.ourFriends {
+   text-align: center;
+   background-color: $color-light-l;
+   @include padding-wrapper;
+}
+
+.ourFriends {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.card-container {
+   display: flex;
+   flex-flow: row wrap;
+   align-content: space-between;
+   justify-content: space-between;
+   margin: 6rem 0 6rem 0;
+}
+.card {
+   background-color: $color-light-s;
+   border-radius: 0.9rem;
+}
+.card:hover {
+   cursor: pointer;
+   background-color: $color_light_xl;
+}
+.card .title {
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+}
+.card .button {
+   margin-bottom: 3rem;
+   width: 18.7rem;
+}
+
+.card__image {
+   width: 27rem;
+   height: 27rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.ourFriends .button_pink {
+   width: 26.1rem;
+}
+
+/*************btn************************/
+.btn-container {
+   display: flex;
+   justify-content: space-between;
+   width: 34rem;
+}
+
+@media (max-width: 76.8rem) {
+   .card-container {
+      justify-content: space-evenly;
+      margin: 0 0 4rem 0;
+   }
+   .card {
+      margin-top: 3rem;
+   }
+
+   .card:nth-last-child(n + 7) {
+      display: none;
+   }
+   .ourFriends {
+   }
+}
+@media (max-width: 32rem) {
+   .card:nth-child(n + 6) {
+      display: none;
+   }
+
+   .btn-container {
+      width: 30rem;
+   }
+}
