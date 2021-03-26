@@ -1,0 +1,81 @@
+.ourFriends {
+   text-align: center;
+   background-color: $color-light-l;
+   @include padding-wrapper;
+}
+
+.slider {
+   display: grid;
+   grid-template-columns: 9% auto 9%;
+   align-items: center;
+
+   margin-top: 6rem;
+   margin-bottom: 6rem;
+}
+
+.slider__cards {
+   display: flex;
+   justify-content: space-between;
+}
+.card .title {
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+}
+.card .button {
+   margin-bottom: 3rem;
+   width: 18.7rem;
+}
+
+.card__image {
+   width: 27rem;
+   height: 27rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.ourFriends .button_pink {
+   width: 26.1rem;
+}
+
+.card {
+   background-color: $color-light-s;
+   border-radius: 0.9rem;
+}
+.card:hover {
+   cursor: pointer;
+   background-color: $color_light_xl;
+}
+
+.slider__right {
+   transform: rotate(-180deg);
+}
+@media (max-width: 76.8rem) {
+   .card:nth-child(3) {
+      display: none;
+   }
+}
+@media (max-width: 32rem) {
+   .card:nth-child(2) {
+      display: none;
+   }
+   .slider__cards {
+      order: 0;
+      grid-column: 1 / span 4;
+      justify-self: center;
+   }
+   .slider__left {
+      order: 6;
+      grid-column: 1 / span 2;
+      justify-self: center;
+   }
+   .slider__right {
+      order: 7;
+      justify-self: center;
+      grid-column: 3 / span 2;
+   }
+   .slider {
+      grid-template-columns: repeat(4, auto);
+      grid-template-rows: repeat(2, auto);
+   }
+}

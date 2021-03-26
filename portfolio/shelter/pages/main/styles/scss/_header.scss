@@ -1,0 +1,14 @@
+@import "_nav";
+@import "_logo";
+
+/*//////HEADER////////////////////////////*/
+.header {
+   position: relative;
+}
+/************wrapper for logo and nav****/
+.header__wrapper {
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 6rem;
+}

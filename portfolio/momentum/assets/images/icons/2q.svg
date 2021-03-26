@@ -1,0 +1,20 @@
+<svg width="34899" height="34899" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="4467074" height="4467074" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="Layer_x0020_1">
+   <path class="fil0" d="m1964,9415c4437,-8553 14968,-11889 23520,-7451c390,202 768,417 1135,643l-3336,2132l-4,-1l-6716,4291l-133,-5529c-1091,80 -2167,288 -3204,617c-3411,1081 -6411,3464 -8190,6892c-1778,3428 -2000,7253 -919,10664c789,2488 2270,4757 4343,6493l-3029,1935c-5495,-5215 -7131,-13625 -3467,-20686zm6409,22874l31,2l-61,39c348,213 705,415 1072,605c8553,4438 19083,1102 23520,-7451c3653,-7040 2038,-15420 -3419,-20639l-3024,1933c2046,1730 3509,3981 4290,6448c1081,3411 860,7236 -919,10664c-1779,3428 -4778,5811 -8190,6892c-1072,340 -2186,551 -3315,625l37,-5522l-10022,6404z" id="svg_1"/>
+  </g>
+  <text font-style="normal" font-weight="normal" stroke="#000" transform="matrix(150.6382646045005,0,0,71.10803716418555,-2519084.0149867507,-1209152.4434272642) " xml:space="preserve" text-anchor="start" font-family="'League Gothic', sans-serif" font-size="250" id="svg_4" y="17337.13509" x="16763.53771" stroke-opacity="null" stroke-width="0" fill="#ffffff">Q</text>
+ </g>
+</svg>

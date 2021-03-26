@@ -1,0 +1,17 @@
+@import "_nav";
+@import "_logo";
+
+/*//////HEADER////////////////////////////*/
+.header {
+   position: sticky; /* Липкое позиционирование */
+   top: 0; /* Положение сверху */
+   background-color: white;
+   padding: 3rem 4rem 3rem 4rem;
+}
+/************wrapper for logo and nav****/
+.header__wrapper {
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   color: $color-dark-l;
+}

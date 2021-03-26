@@ -1,0 +1,60 @@
+.donation {
+   background-color: $color-light-l;
+}
+.donation .wrapper {
+   display: flex;
+   justify-content: center;
+
+   padding: 80px 0 100px 0;
+}
+
+.donation__text {
+   width: 38rem;
+   height: 28.2rem;
+   flex-direction: column;
+   display: flex;
+   justify-content: space-between;
+
+   padding-left: 3rem;
+}
+
+.pay {
+   background-color: $color-primary;
+   border-radius: 0.9rem;
+   padding: 1rem 1.5rem;
+}
+.pay__icon {
+   width: 3rem;
+   height: 2.3rem;
+}
+.pay__text {
+   text-decoration: none;
+}
+
+@media (max-width: 76.8rem) {
+   .donation .wrapper {
+      flex-flow: column-reverse wrap;
+      align-content: center;
+   }
+   .donation__text {
+      margin: 0 auto;
+      margin-bottom: 6rem;
+   }
+}
+
+@media (max-width: 32rem) {
+   .donation__text {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+   }
+   .text_description {
+      text-align: justify;
+   }
+   .donation__image img {
+      width: 26rem;
+      height: 13.52rem;
+      margin: 0 auto;
+      display: block;
+   }
+}

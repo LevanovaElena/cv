@@ -1,0 +1,60 @@
+@mixin title {
+   font-family: $fontBig;
+   font-style: normal;
+   font-weight: 400;
+}
+@mixin title_h2 {
+   font-size: 4.4rem;
+   line-height: 130%;
+}
+@mixin title_small {
+   font-size: 3.5rem;
+   letter-spacing: 0.06em;
+   line-height: 130%;
+}
+
+@mixin title_h3 {
+   font-size: 2rem;
+   line-height: 2.3rem;
+   letter-spacing: 0.06em;
+   line-height: 130%;
+}
+
+@mixin title_h4 {
+   font-size: 2rem;
+   line-height: 115%;
+   letter-spacing: 0.06em;
+}
+
+@mixin title_h5 {
+   font-family: $fontBig;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 1.5rem;
+   line-height: 110%;
+}
+@mixin text_description {
+   font-family: $fontSmall;
+   font-style: italic;
+   font-weight: normal;
+   font-size: 1.2rem;
+   line-height: 1.8rem;
+}
+
+@mixin title_h2_mobile {
+   font-size: 2.5rem;
+}
+
+@mixin title_small_mobile {
+   font-size: 2.5rem;
+}
+
+@mixin padding-wrapper {
+   padding: 8rem 0 10rem 0;
+   @media (max-width: 76.8rem) {
+      padding: 6rem 0 7rem 0;
+   }
+   @media (max-width: 32rem) {
+      padding: 4.2rem 0 4.2rem 0;
+   }
+}

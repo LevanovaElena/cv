@@ -1,0 +1,69 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, #4e4450, #c6df99);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.span-four {
+  grid-column: span 4;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, .75);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output:hover::after { 
+  content: attr(data-title); 
+  position: absolute; /* Абсолютное позиционирование */
+  left: 50%; top: 10%; /* Положение подсказки */
+  z-index: 1; /* Отображаем подсказку поверх других элементов */
+  background: rgba(255,255,230,0.9); /* Полупрозрачный цвет фона */
+  font-family: Arial, sans-serif; /* Гарнитура шрифта */
+  font-size: 15px; /* Размер текста подсказки */
+  padding: 5px 10px; /* Поля */
+  border: 1px solid #333; /* Параметры рамки */
+ }
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, .75);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}

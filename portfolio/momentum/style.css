@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Marmelad", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 10px;
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center center;
+
+  transition: background-image 1s ease-in-out;
+}
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url("./assets/images/overlay.png");
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: url("./assets/images/icons/2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin: 1rem;
+}
+
+.btn:hover {
+  filter: grayscale(0.8);
+  cursor: pointer;
+}
+.btn:active,
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(1.02);
+}
+/*------------------------*/
+.weather {
+  width: 10rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+.weather-description {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+.temperature {
+  margin-left: 0.5rem;
+}
+.weather-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem;
+}
+.addition {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.1rem;
+}
+.icon-wind {
+  background-image: url(./assets/images/icons/wind.svg);
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.icon-hum {
+  background-image: url(./assets/images/icons/hum.svg);
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 0;
+}
+.city {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+/*-----------------------*/
+.wrapper1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  height: 15vh;
+}
+
+.wrapper2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper3 {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+}
+.time {
+  font-size: 8rem;
+}
+.day {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+
+/**-----------------------------*/
+.greeting-name {
+  margin-bottom: 4rem;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+}
+.name {
+  padding-left: 0.5rem;
+}
+.focus-wrapper {
+  font-size: 2rem;
+}
+.question_focus {
+  margin-bottom: 0.5rem;
+}
+
+.btn-quote {
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: url("./assets/images/icons/2q.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+  margin: 1rem;
+}
+
+.btn-quote:hover {
+  filter: grayscale(0.8);
+  cursor: pointer;
+}
+.btn-quote:active,
+.btn-quote:focus {
+  outline: 0;
+}
+.btn-quote:active {
+  transform: scale(1.02);
+}
+
+.quote {
+  font-size: 1.2rem;
+}
+.quote figcaption,
+.quote blockquote {
+  margin: 1em;
+}
+.quote figcaption {
+  text-align: right;
+}
+
+@media (max-width: 700px) {
+  .time {
+    font-size: 6rem;
+  }
+  .day {
+    font-size: 4rem;
+  }
+  .greeting-name {
+    font-size: 2rem;
+  }
+  .focus-wrapper {
+    font-size: 1.5rem;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+  .weather {
+    font-size: 0.6rem;
+  }
+  .btn,
+  .btn-quote {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .time {
+    font-size: 4rem;
+  }
+  .day {
+    font-size: 2rem;
+  }
+  .greeting-name {
+    font-size: 1rem;
+  }
+  .focus-wrapper {
+    font-size: 1rem;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+}

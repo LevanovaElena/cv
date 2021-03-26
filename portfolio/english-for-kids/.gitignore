@@ -1,0 +1,7 @@
+# Игнорируется директория в любой директории проекта
+scss
+*.scss
+*.json
+.idea
+node_modules
+dist

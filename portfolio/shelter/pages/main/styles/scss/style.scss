@@ -1,0 +1,21 @@
+/*@import "_nullstyle";*/
+@import "_mixins";
+@import "_variables";
+@import "_titles";
+@import "_wrapper";
+@import "_buttons";
+@import "_header";
+@import "_notonly";
+@import "_about";
+@import "_ourFriends";
+@import "_help";
+@import "_donation";
+@import "_footer";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+html {
+    font-size: 10px;
+}

@@ -1,20 +1,24 @@
 let works = [
   {
-    image: "1.jpg",
+    image: "wix.jpg",
     caption: "Website on CMS Wix",
     src: "#",
     typeIcon: "CMS",
+    about: "",
   },
   {
-    image: "2.jpg",
+    image: "webdev.jpg",
     caption: "Website on HTML, CSS",
-    src: "#",
+    src:
+      "https://rolling-scopes-school.github.io/levanovaelena-JS2020Q3/webdev/#",
     typeIcon: "htmlCss",
+    about: "Pixel Perfect layout, HTML5, CSS3",
   },
   {
     image: "3.jpg",
     caption: "Website on CMS Wix",
-    src: "#",
+    src:
+      "https://rolling-scopes-school.github.io/levanovaelena-JS2020Q3/calculator/",
     typeIcon: "htmlCss",
   },
   {

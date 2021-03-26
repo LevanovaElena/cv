@@ -1,0 +1,40 @@
+/*-----------LOGO----------------------*/
+.logo {
+   width: 18.4rem;
+   height: 6rem;
+}
+.logo__title {
+   font-family: $fontBig;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 3.2rem;
+   line-height: 110%;
+   letter-spacing: 0.05em;
+   margin-block-start: 0;
+   margin-block-end: 0;
+
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: $color-dark-l;
+}
+.link {
+   text-decoration: none;
+}
+.logo__subtitle {
+   /* logo-subtitle */
+
+   font-family: $fontSmall;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 1.3rem;
+   line-height: 1.5rem;
+
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.1em;
+
+   /* base-white */
+
+   margin-top: 1rem;
+}
