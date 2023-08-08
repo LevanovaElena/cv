@@ -1,5 +1,17 @@
 let works = [
   {
+    image: "explorer1.jpg",
+    caption: "Project from my last job. React.js (Hooks),TypeScript, Effector, Bootstrap, Ant, Node.js",
+    src: " https://www.ghx.com/digital-case-support/",
+    typeIcon: "react",
+  },
+  {
+    image: "explorer2.jpg",
+    caption: "Project from my last job. React.js (Class components),JavaScript",
+    src: " https://www.ghx.com/digital-case-support/",
+    typeIcon: "react",
+  },
+  {
     image: "wix.jpg",
     caption: "Website on CMS Wix. Real project on CMS WIX",
     src: "https://ellevanova.wixsite.com/parspb",
@@ -75,6 +87,7 @@ let icons = {
   CMS: "CMS.png",
   htmlCss: "iconHtmlCss.png",
   htmlCssJs: "iconJs.png",
+  react:"react.png"
 };
 
 class Slide {
@@ -102,9 +115,9 @@ class Slide {
         item.caption +
         "</a>";
       portfolioImage.classList.add("none");
-      portfolioImage.innerHTML = `<img src="./img/portfolio/${item.image}" alt="On CMS WIX"></img>`;
+      portfolioImage.innerHTML = `<img src="./img/portfolio/${item.image}" alt="On CMS WIX">`;
 
-      portfolioItem.addEventListener("mouseover", (event) => {
+      portfolioItem.addEventListener("mouseover", () => {
         portfolioImage.classList.remove("none");
       });
       portfolioItem.addEventListener("mouseout", () => {
@@ -123,7 +136,7 @@ let arrayForSlide = [];
 let arrayOfSliders = [];
 let activeSlide = 1;
 works.forEach((item) => {
-  if (i < 6) {
+  if (i < 5 ) {
     arrayForSlide.push(item);
     i += 1;
   } else {
@@ -140,7 +153,7 @@ function div(val, by) {
 }
 
 let numberOfSlide =
-  works.length % 6 === 0 ? div(works.length, 6) : div(works.length, 6) + 1;
+  works.length % 6 === 0 ? div(works.length, 6) : div(works.length, 6)+1 ;
 numberOfSlide = numberOfSlide.toFixed(0);
 
 console.log(numberOfSlide);
