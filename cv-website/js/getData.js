@@ -12,7 +12,7 @@ function getData(districtClassName, realtyComplexClassName, flatClassName)  {
             //console.log('itog',itog);
             //estimates=itog;
             window.estimates=itog;
-            console.log('itog',window.estimates);
+            //console.log('itog',window.estimates);
         })
 }
 
