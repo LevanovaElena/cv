@@ -1,7 +1,7 @@
 window.estimates=null;
 function getData(districtClassName, realtyComplexClassName, flatClassName)  {
     if(window.estimates) {
-        console.log(districtClassName, realtyComplexClassName, flatClassName,estimates);
+        //console.log(districtClassName, realtyComplexClassName, flatClassName,estimates);
         replace(districtClassName, realtyComplexClassName, flatClassName,estimates);
         return;
     }
@@ -20,18 +20,18 @@ function replace(districtClassName, realtyComplexClassName, flatClassName,estima
 
     let element= document.getElementById(`${districtClassName}`);
     if(element) {
-        console.log(element)
+        //console.log(element)
         element.textContent = estimates.district || '';
     }
     element= document.getElementById(`${realtyComplexClassName}`);
     if(element) {
-        console.log(element)
+        //console.log(element)
         element.textContent = estimates["realty complex"]
             || '';
     }
     element= document.getElementById(`${flatClassName}`);
     if(element) {
-        console.log(element)
+        //console.log(element)
         element.textContent = estimates.flate
             || '';
     }
