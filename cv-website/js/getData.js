@@ -9,7 +9,8 @@ function getData(districtClassName, realtyComplexClassName, flatClassName)  {
         .then(result => result.json())
         .then(itog => {
             window.estimates=itog;
-        })
+        }).
+        catch(()=>window.estimates=null)
 }
 
 function replace(districtClassName, realtyComplexClassName, flatClassName,estimates){
