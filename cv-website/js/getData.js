@@ -1,7 +1,7 @@
 window.estimates=null;
 function getData(districtClassName, realtyComplexClassName, flatClassName)  {
     if(window.estimates) {
-        replace(districtClassName, realtyComplexClassName, flatClassName,estimates);
+        replace(districtClassName, realtyComplexClassName, flatClassName,window.estimates);
         return;
     }
 
